@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MyWebPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# AboutMeWebsite
+Personal website showcasing my skills, experience, and portfolio of projects. Includes an "About Me" section, project highlights, and a contact form. Built from scratch to serve as a digital resume and platform to share my work.
+>>>>>>> 252405ca3a996df4f35f8c6601bb95cefda10b11
