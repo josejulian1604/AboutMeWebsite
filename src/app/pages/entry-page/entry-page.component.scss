@@ -1,0 +1,15 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+.custom-span {
+    color: $red-500;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: bolder;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 1rem;
+    
+}
