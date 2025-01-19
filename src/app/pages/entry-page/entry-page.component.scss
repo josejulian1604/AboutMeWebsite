@@ -7,8 +7,9 @@
     font-weight: bolder;
 }
 
-.custom-h6 {
+.custom-h5 {
     color: $red-500;
+    font-weight: 400;
 }
 
 .background-container {
@@ -30,7 +31,8 @@
     z-index: 2;
 }
 
-.column-1 {
+.column-1,
+.column-3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,14 +43,15 @@
 
 .column-1 h1, 
 .column-1 h5, 
+.column-3 h5, 
 .column-1 button {
-    margin-bottom: 2vh; // Espaciado entre elementos adaptable al alto de la pantalla
+    margin-bottom: 2vh; 
 }
 
 button.btn-primary {
-    margin-top: 5vh; // Espaciado extra entre el texto y el botón
-    font-size: 1.2rem; // Tamaño de fuente adaptable
-    padding: 1vh 2vw; // Espaciado adaptable dentro del botón
+    margin-top: 5vh; 
+    font-size: 1.2rem; 
+    padding: 1vh 2vw; 
     color: #fff;
     background-color: $red-500;
     border: 1px solid $red-500;
@@ -70,4 +73,69 @@ button.btn-primary:hover {
     border-radius: 20%;
     padding: 0.5rem;
     margin-left: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    font-size: 1.5rem;
+}
+
+.social-icons i:hover {
+    color: $red-500;
+}
+
+.bi {
+    padding-bottom: 5%;
+}
+
+.column-contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 85vh;
+}
+
+.bio {
+    padding-left: 10%;
+    text-align: left;
+    max-width: 90%;
+    margin-top: -10vh;
+}
+
+.bio p {
+    text-align: justify;
+    line-height: 1.6; 
+}
+
+.tec-link {
+    color: $red-500; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tec-link:hover {
+    color: $red-300;
+    text-decoration: none;
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $red-500;
+    text-decoration: none;
+    margin-top: 2vh;
+
+    &:hover {
+        color: $red-300;
+        text-decoration: underline;
+    }
+
+    i {
+        margin-left: 0.5rem;
+    }
 }
