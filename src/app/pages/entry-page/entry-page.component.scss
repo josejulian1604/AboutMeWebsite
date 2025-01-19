@@ -7,9 +7,67 @@
     font-weight: bolder;
 }
 
-.page-container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    gap: 1rem;
-    
+.custom-h6 {
+    color: $red-500;
+}
+
+.background-container {
+    position: fixed;
+    background-image: url("../../../assets/images/phoneImage2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 50%;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    padding-left: 10%;
+}
+
+.column-1 h1, 
+.column-1 h5, 
+.column-1 button {
+    margin-bottom: 2vh; // Espaciado entre elementos adaptable al alto de la pantalla
+}
+
+button.btn-primary {
+    margin-top: 5vh; // Espaciado extra entre el texto y el botón
+    font-size: 1.2rem; // Tamaño de fuente adaptable
+    padding: 1vh 2vw; // Espaciado adaptable dentro del botón
+    color: #fff;
+    background-color: $red-500;
+    border: 1px solid $red-500;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+}
+
+button.btn-primary:hover {
+    color: #000;
+    background-color: $red-300;
+}
+
+.btn-primary i {
+    background-color: $red-300;
+    border-radius: 20%;
+    padding: 0.5rem;
+    margin-left: 2rem;
 }
