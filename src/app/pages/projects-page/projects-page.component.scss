@@ -1,0 +1,61 @@
+//TODO: It would look better if the background was white (keep the black navbar).
+//TODO: Finish first the design an then you can change it to white
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+.steam-image {
+    background-image: url("../../../assets/images/steam.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
+.row {
+    background-color: #121212;
+    color: #f5f5f5; /* Texto claro para contraste */
+    border-color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.row h5 {
+    color: $red-500;
+}
+
+.card {
+    border: none !important; /* Elimina el borde de la tarjeta */
+    box-shadow: none !important; /* Evita sombras no deseadas */
+    background-color: transparent; /* Asegura que el fondo se mezcle bien */
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .steam-image {
+        border-radius: 12px 12px 0 0; /* Bordes ajustados en pantallas pequeñas */
+        min-height: 200px;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+}
