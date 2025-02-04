@@ -1,6 +1,3 @@
-//TODO: It would look better if the background was white (keep the black navbar).
-//TODO: Finish first the design an then you can change it to white
-
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
@@ -14,12 +11,67 @@
     border-radius: 12px 0 0 12px;
 }
 
+.national-theater-image {
+    background-image: url("../../../assets/images/digital-twin.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
+.wikisearch-image {
+    background-image: url("../../../assets/images/WikisearchNereo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
+.polaris-image {
+    background-image: url("../../../assets/images/polaris.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
+.teacher-platform-image {
+    background-image: url("../../../assets/images/TeacherManagementPlatform.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
+.movie-search-image {
+    background-image: url("../../../assets/images/MovieSearch.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 12px 0 0 12px;
+}
+
 .row {
-    background-color: #121212;
-    color: #f5f5f5; /* Texto claro para contraste */
+    background-color: #000;
+    color: #fff;
     border-color: #000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
+}
+
+.container h1 {
+    margin-top: 2.5rem;
 }
 
 .row h5 {
@@ -27,9 +79,10 @@
 }
 
 .card {
-    border: none !important; /* Elimina el borde de la tarjeta */
-    box-shadow: none !important; /* Evita sombras no deseadas */
-    background-color: transparent; /* Asegura que el fondo se mezcle bien */
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
@@ -50,12 +103,59 @@
 }
 
 @media (max-width: 768px) {
-    .steam-image {
-        border-radius: 12px 12px 0 0; /* Bordes ajustados en pantallas pequeñas */
+
+    .steam-image,
+    .national-theater-image,
+    .wikisearch-image,
+    .polaris-image,
+    .teacher-platform-image,
+    .movie-search-image {
+        border-radius: 12px 12px 0 0;
         min-height: 200px;
+        width: 100%;
     }
-    
-    .row {
+
+    .card>.row {
+        display: flex;
         flex-direction: column;
     }
+
+    .card>.row>.col-6 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card>.row>.col-6:has(.card-body) {
+        order: 1;
+    }
+
+    .card>.row>.col-6:not(:has(.card-body)) {
+        order: 2;
+    }
+
+    .card-title {
+        order: 1;
+    }
+
+    .card-text {
+        order: 2;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
 }

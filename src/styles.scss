@@ -3,6 +3,11 @@ body {
     color: #fff;
 }
 
+body.white-background {
+    background-color: #fff !important;  
+    color: #000;
+}
+
 h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }

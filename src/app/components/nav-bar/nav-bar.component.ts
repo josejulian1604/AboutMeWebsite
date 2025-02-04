@@ -8,9 +8,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [OffcanvasNavbarComponent, RouterModule, CommonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent{
+export class NavBarComponent {
   showArrow: boolean = true;
 
   constructor(private router: Router) {
