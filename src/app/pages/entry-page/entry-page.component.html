@@ -7,17 +7,17 @@
                 <h1>Hi</h1>
                 <h1>I'm <span class="custom-span">Jose</span></h1>
                 <h5 style="font-weight: 300;">Aspiring Software Engineer Student</h5>
-                <button type="button" class="btn btn-primary" [routerLink]="['/projects']">
+                <button type="button" class="btn btn-primary d-none d-md-flex" [routerLink]="['/projects']">
                     My Portfolio
                     <i class="bi bi-arrow-right"></i>
                 </button>
             </div>
-            <div class="social-icons">
+            <div class="social-icons d-none d-md-flex">
                 <a href="https://www.linkedin.com/in/jose-julian-gutierrez-badilla-8095a528a/" target="_blank">
                     <i class="bi bi-linkedin"></i>
                 </a>
                 <a href="https://github.com/josejulian1604" target="_blank">
-                    <i class="bi bi-github"></i> 
+                    <i class="bi bi-github"></i>
                 </a>
             </div>
         </div>
@@ -44,6 +44,20 @@
                 <a href="path-to-cv.pdf" class="download-cv" download>
                     <strong>Download CV</strong> <i class="bi bi-download"></i>
                 </a>
+            </div>
+            <div class="footer-mobile-actions d-md-none">
+                <button type="button" class="btn btn-primary" [routerLink]="['/projects']">
+                    My Portfolio
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jose-julian-gutierrez-badilla-8095a528a/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/josejulian1604" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

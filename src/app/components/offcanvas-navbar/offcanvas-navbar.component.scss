@@ -1,0 +1,38 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+.offcanvas {
+    background-color: #111;
+    color: #fff;
+}
+
+.offcanvas-body {
+    padding: 2rem;
+}
+
+.offcanvas-body a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.offcanvas-body a:hover {
+    color: $red-500;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}

@@ -14,7 +14,7 @@
 
 .background-container {
     position: fixed;
-    background-image: url("../../../assets/images/phoneImage2.jpg");
+    background-image: url("../../../assets/images/myself2.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,17 +41,17 @@
     padding-left: 10%;
 }
 
-.column-1 h1, 
-.column-1 h5, 
-.column-3 h5, 
+.column-1 h1,
+.column-1 h5,
+.column-3 h5,
 .column-1 button {
-    margin-bottom: 2vh; 
+    margin-bottom: 2vh;
 }
 
 button.btn-primary {
-    margin-top: 5vh; 
-    font-size: 1.2rem; 
-    padding: 1vh 2vw; 
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    padding: 1vh 2vw;
     color: #fff;
     background-color: $red-500;
     border: 1px solid $red-500;
@@ -99,7 +99,7 @@ button.btn-primary:hover {
 .column-contanier {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 85vh;
 }
 
@@ -112,11 +112,11 @@ button.btn-primary:hover {
 
 .bio p {
     text-align: justify;
-    line-height: 1.6; 
+    line-height: 1.6;
 }
 
 .tec-link {
-    color: $red-500; 
+    color: $red-500;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -145,12 +145,35 @@ button.btn-primary:hover {
     }
 }
 
+// Bigger Screens
+@media (min-width: 1900px) {
+    .column-1 h1 {
+        font-size: 4rem;
+    }
+
+    .column-1 h5 {
+        font-size: 1.75rem;
+    }
+
+    .column-1 button {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+}
+
+
+// Mobile Styles
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .col-4 {
         width: 100%;
     }
@@ -162,11 +185,19 @@ button.btn-primary:hover {
         text-align: center;
         height: auto;
         margin-top: 4vh;
+        margin-bottom: 0;
+    }
+
+    .column-1 h5 {
+        margin-bottom: 10vh;
     }
 
     .column-contanier {
         display: flex;
-        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 2vh;
     }
 
     .social-icons {
@@ -189,9 +220,9 @@ button.btn-primary:hover {
     }
 
     .col:nth-child(2) {
-        width: 100vw; 
+        width: 100vw;
         min-height: 50vh;
-        background-image: url("../../../assets/images/phoneImage2.jpg");
+        background-image: url("../../../assets/images/myself2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -204,5 +235,26 @@ button.btn-primary:hover {
 
     .background-container {
         display: none;
+    }
+
+    .footer-mobile-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin-bottom: 4vh;
+    }
+
+    .footer-mobile-actions .btn {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .footer-mobile-actions .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5vw;
+        font-size: 1.8rem;
     }
 }
