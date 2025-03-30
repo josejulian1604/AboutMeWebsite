@@ -35,7 +35,11 @@
                 "input": "src/assets",
                 "output": "assets"
               },
-              "src/favicon.ico"
+              {
+                "glob": "favicon.ico",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.scss"
