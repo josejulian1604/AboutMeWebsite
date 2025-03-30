@@ -24,13 +24,6 @@ jobs:
       - name: Build
         run: npm run build -- --configuration production
 
-      - name: Check build output
-        run: |
-        echo "Contenido de dist/my-web-page/browser:"
-        ls -lh dist/my-web-page/browser
-        echo "Primeras líneas de index.html:"
-        head -n 10 dist/my-web-page/browser/index.html
-
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
