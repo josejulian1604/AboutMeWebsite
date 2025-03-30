@@ -24,6 +24,9 @@ jobs:
       - name: Build
         run: npm run build -- --configuration production
 
+      - name: Check build output
+        run: ls -lh dist/my-web-page && cat dist/my-web-page/index.html | head -n 10
+
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
